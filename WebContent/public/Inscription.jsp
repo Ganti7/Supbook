@@ -1,3 +1,6 @@
+<%@page import="java.util.*"%>
+<%@page import="javax.servlet.*"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +15,7 @@
 </head>
 <body>
     <div id="div">
-        <form>
+        <form action="<%=request.getContextPath()%>/private/loginForm.jsp">
             <label for="Nom">Nom : </label>
             <input type="text" name="Nom" id="Nom"/><br>
             <label for="Prenom">Prenom : </label>
