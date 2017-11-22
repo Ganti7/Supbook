@@ -20,7 +20,7 @@
 </head>
 <body>
     <div id="div">
-        <form>
+        <form action="<%=request.getContextPath()%>/private/login.jsp">
             <label for="Mail">Adresse email : </label>
             <input type="text" name="Mail" id="Mail"/><br>
             <label for="MDP">Mot de passe : </label>
