@@ -17,7 +17,7 @@ public class MessageService {
 	PreparedStatement ps = null;
 	try {
 
-		ps = cx.prepareStatement("INSERT INTO MESSAGE( MESSAGE, ID_USER_SENT, ID_USER_RECEIVE, DATE) VALUES (?, ?, ?, ?)");
+		ps = cx.prepareStatement("INSERT INTO MESSAGE( MESSAGE, ID_USER_SENT, ID_USER_RECEIVE) VALUES (?, ?, ?)");
 		ps.setLong(1, message.getOwner());
 		ps.setString(2, message.getPublishDate());
 		ps.setString(3, message.getContent());

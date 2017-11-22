@@ -38,6 +38,7 @@
 						out.println("<div style=\"background-color:cyan\">" + message.getContent() + "</div>");
 					}
 				}
+				
 			%>
 		</div>
     </div>

@@ -15,5 +15,3 @@
 	} else {
 		response.sendRedirect(request.getContextPath() + "/private/loginForm.jsp?msg=Connection error");
 	}
-
-%>

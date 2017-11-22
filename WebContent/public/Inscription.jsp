@@ -1,8 +1,3 @@
-<%@page import="com.zenika.supbook.model.Message"%>
-<%@page import="com.zenika.supbook.service.MessageService"%>
-<%@page import="java.util.*"%>
-<%@page import="javax.servlet.*"%>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +12,7 @@
 </head>
 <body>
     <div id="div">
-        <form action="<%=request.getContextPath()%>/private/loginForm.jsp">
+        <form>
             <label for="Nom">Nom : </label>
             <input type="text" name="Nom" id="Nom"/><br>
             <label for="Prenom">Prenom : </label>
