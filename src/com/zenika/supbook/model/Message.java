@@ -20,6 +20,14 @@ public class Message extends AbstractBusinessObject {
 		this.sender = sender;
 	}
 
+	public Message( String content, Date publishDate, long owner, long sender) {
+		super();
+		this.content = content;
+		this.publishDate = publishDate;
+		this.owner = owner;
+		this.sender = sender;
+	}
+	
 	public String getContent() {
 		return content;
 	}

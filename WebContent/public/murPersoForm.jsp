@@ -20,7 +20,7 @@
     <div id="div1">
         <label for="messageAmi">Poster sur son mur : </label>
         <form action="<%=request.getContextPath()%>/private/murPerso.jsp">
-        	<input type="text" name="humeur" id="messageAmi"/>
+        	<input type="text" name="context" id="messageAmi"/>
         	<button type="submit">Valider</button>
         	<button>Public</button><p style="color:red;">(Bouton switch public => privé)</p>
         </form>
