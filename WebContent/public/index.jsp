@@ -8,8 +8,8 @@
 
 <header>
 	<div >
-		<a href="http://localhost:8080/supbook/public/Inscription.jsp"><input type="button" name="Répondre "value="Inscription"/></a>
-		<a href="http://localhost:8080/supbook/public/Connexion.jsp"><input type="button" name="Répondre "value="Login"/></a>
+		<a href="http://localhost:8080/supbook/public/Inscription.jsp"><input type="button" value="Inscription"/></a>
+		<a href="http://localhost:8080/supbook/public/Connexion.jsp"><input type="button" value="Login"/></a>
    	</div>
 </header>
 	
