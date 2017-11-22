@@ -8,7 +8,7 @@
 
 <header>
 	<div >
-		<form action="http://localhost:8080/supbook/private"></form>
+		<form action="http://localhost:8080/supbook/public/Inscription.jsp"></form>
    		<input type="submit" value="Login" />
    	</div>
 </header>
