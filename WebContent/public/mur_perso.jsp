@@ -1,6 +1,7 @@
 <%@page import="com.zenika.supbook.model.Message"%>
 <%@page import="com.zenika.supbook.service.MessageService"%>
 <%@page import="java.util.*"%>
+<%@page import="javax.servlet.*"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,23 +28,23 @@
         <input type="text" name="humeur" id="messageAmi"/>
         <button>Valider</button>
         <button>Public</button><p style="color:red;">(Bouton switch public => privé)</p>
+		<div id='message'> 
 		
-    </div>
-	
-	<%
+			<%
 		List<String> toWrite = new ArrayList<String>();
 	
 		List<Message> messages = new MessageService().findUserMessage(1);	
 		
 		for (Message message : messages) {
-			toWrite.add(message.getContent());
+			out.println("<div>" + message.getContent() + "</div>");
 		}
-			
-		HTML messageDiv = new HTML("<div id='message'>" + toWrite + "</div>");
+		
 		
 	%>
-
-
+		
+		</div>
+    </div>
+	
 
 </body>
 </html>
